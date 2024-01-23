@@ -1,144 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-3</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-    
-    .btn-primary{
-        border-radius: 8px;
-background: #FF4240;
-display: inline-flex;
-padding: 15px 24px;
-justify-content: center;
-align-items: center;
-gap: 10px;
- color: white;
-    }
-    .font-manrope {
-            font-family: 'Manrope', sans-serif;
-        }
-        .carousel-item img {
-            border-radius: 12px;
-        }
-</style>
-</head>
-<body class="font-manrope">
-    <header class="px-5 py-10">
-        <div class="flex justify-between mx-auto max-w-7xl items-center">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Assignment-3</title>
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+      <style>
+         .btn-primary{
+         border-radius: 8px;
+         background: #FF4240;
+         display: inline-flex;
+         padding: 15px 24px;
+         justify-content: center;
+         align-items: center;
+         gap: 10px;
+         color: white;
+         }
+         .font-manrope {
+         font-family: 'Manrope', sans-serif;
+         }
+         .carousel-item img {
+         border-radius: 12px;
+         }
+         .card-border {
+         border: 1px solid #ddd;
+         padding: 20px;
+         border-radius: 20px;
+         }
+         @media screen and (max-width:1024px) {
+         .demo-class img {
+         height: 244px;
+         border-radius: 12px;
+         object-fit: cover;
+         }
+         .secendary{
+         padding: 8px;
+         }
+         }
+      </style>
+   </head>
+   <body class="font-manrope">
+      <header class="px-5 py-10">
+         <div class="flex justify-between mx-auto max-w-7xl items-center">
             <div class="flex items-center">
-                <img class="flex lg:hidden w-6 h-6 mr-4 items-center" src="Images/Vector@2x.png" alt="">
+               <img class="flex lg:hidden w-6 h-6 mr-4 items-center" src="Images/Vector@2x.png" alt="">
                <h2 class="text-[#131318] text-4xl font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</h2>
-
             </div>
-          
-                <div>
-                    <ul class="hidden lg:flex gap-11 items-center text-base font-normal">
-                        <li><a class="text-[#FF4240]" href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Pages</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <button class="btn-primary"><a href="">Get Ticket</a></button>
-                </div>
-            
-        </div>
-    </header>
-    <main>
-        <!-- banner section -->
-        <section class="px-5 ">
-           <div class="mx-auto max-w-7xl">
-
-            <div class="carousel relative ">
-                <div id="slide1" class="carousel-item relative w-full">
-                  <img src="Images/1.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">❮</a> 
-                    <a href="#slide2" class="btn btn-circle">❯</a>
+            <div>
+               <ul class="hidden lg:flex gap-11 items-center text-base font-normal">
+                  <li><a class="text-[#FF4240]" href="">Home</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Pages</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Contact</a></li>
+               </ul>
+            </div>
+            <div>
+               <button class="btn-primary"><a href="">Get Ticket</a></button>
+            </div>
+         </div>
+      </header>
+      <main>
+         <!-- banner section -->
+         <section class="px-5 ">
+            <div class="mx-auto max-w-7xl">
+               <div class="carousel relative ">
+                  <div id="slide1" class="carousel-item relative w-full">
+                     <img src="Images/1.png" class="w-full" />
+                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a> 
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                     </div>
                   </div>
-                </div> 
-                <div id="slide2" class="carousel-item relative w-full">
-                  <img src="Images/2.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  <div id="slide2" class="carousel-item relative w-full">
+                     <img src="Images/2.png" class="w-full" />
+                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a> 
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                     </div>
                   </div>
-                </div> 
-                <div id="slide3" class="carousel-item relative w-full">
-                  <img src="Images/3.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a> 
-                    <a href="#slide4" class="btn btn-circle">❯</a>
-                  </div>
-                </div > 
-
-                <div class="hidden lg:block absolute bg-[#131318] rounded-2xl p-8 bottom-12 right-12">
-                    <h3 class="text-[#FFF] text-2xl font-extrabold">Meet all the heroes from the field</h3>
+                  <div id="slide3" class="carousel-item relative w-full">
+                     <img src="Images/3.png" class="w-full" />
+                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a> 
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                     </div>
+                  </div >
+                  <div class="hidden lg:block absolute bg-[#131318] rounded-2xl p-8 bottom-12 right-12">
+                     <h3 class="text-[#FFF] text-2xl font-extrabold">Meet all the heroes from the field</h3>
                      <p class="text-[#FFF] text-base font-extrabold">Hockey Heroes is an eight week hockey programme aimed <br> at beginners
-                         that not only focuses on helping children <br> develop some physical
-                          hockey superpowers such as <br>
-                           dribbling, passing and goal scoring,</p>
-               
-
-                </div>
-                
-              </div>
-
-           </div>
-           <div class=" lg:hidden bg-[#131318] rounded-2xl p-8 mt-5">
-            <h3 class="text-[#FFF] text-2xl lg:font-extrabold">Meet all the heroes from the field</h3>
-             <p class="text-[#FFF] text-base font-light lg:font-extrabold">Hockey Heroes is an eight week hockey programme aimed <br> at beginners
-                 that not only focuses on helping children <br> develop some physical
+                        that not only focuses on helping children <br> develop some physical
+                        hockey superpowers such as <br>
+                        dribbling, passing and goal scoring,
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class=" lg:hidden bg-[#131318] rounded-2xl p-8 mt-5">
+               <h3 class="text-[#FFF] text-2xl lg:font-extrabold">Meet all the heroes from the field</h3>
+               <p class="text-[#FFF] text-base font-light lg:font-extrabold">Hockey Heroes is an eight week hockey programme aimed <br> at beginners
+                  that not only focuses on helping children <br> develop some physical
                   hockey superpowers such as <br>
-                   dribbling, passing and goal scoring,</p>
-        </div>
-        </section>
+                  dribbling, passing and goal scoring,
+               </p>
+            </div>
+         </section>
+         <!--  professional hockey club -->
+         <section class="px-5 py-10">
+            <div class="mx-auto max-w-7xl">
+               <div class=" text-center">
+                  <h3 class="text-[#131318] text-2xl lg:text-4xl font-extrabold p-4 lg:p-6">Professional Hockeys Club</h3>
+                  <p class="text-base font-normal  lg:font-semibold max-w-[707px] mx-auto">Professional hockey developed in the United States and Canada around the turn of the 20th century.
+                     Houghton, Michigan, was formally considered the "birthplace of professional hockey"
+                  </p>
+               </div>
+               <div class="grid grid-cols-1 lg:grid-cols-4 py-8 lg:py-12">
+                  <div class="text-center py-5 lg:p-5">
+                     <div class="radial-progress text-red-500" style="--value:87;" role="progressbar">87%</div>
+                     <h5 class="my-4 text-xl font-semibold ">Prayer Facility</h5>
+                     <p class=" text-base font-light">every profesional hockey club has prayer facility and it depends on player and the club stuff's religion</p>
+                  </div>
+                  <div class="text-center py-5  lg:p-5">
+                     <div class="radial-progress text-green-400" style="--value:95;" role="progressbar">95%</div>
+                     <h5 class="my-4 text-xl font-semibold ">Experienced Coach</h5>
+                     <p class=" text-base font-light">Most of clubs have experience coach.Hockey coaches are responsible for  all aspects of their team's performance.</p>
+                  </div>
+                  <div class="text-center py-5  lg:p-5">
+                     <div class="radial-progress text-yellow-300" style="--value:90;" role="progressbar">90%</div>
+                     <h5 class="my-4 text-xl font-semibold ">Senior Player</h5>
+                     <p class=" text-base font-light">senior player is the key part of game.There are no age restrictions for Senior players,</p>
+                  </div>
+                  <div class="text-center py-5  lg:p-5">
+                     <div class="radial-progress text-cyan-400" style="--value:80;" role="progressbar">80%</div>
+                     <h5 class="my-4 text-xl font-semibold ">Training Ground</h5>
+                     <p class=" text-base font-light">80 percent of professional clubs have their own Training ground so that their player can practice properly.</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- program section -->
+         <section class="px-5">
+            <div class="mx-auto max-w-7xl ">
+               <div class=" text-center">
+                  <h3 class="text-[#131318] text-2xl lg:text-4xl font-extrabold p-4 lg:p-6">Program Sections</h3>
+                  <p class="text-base font-normal mb-6 lg:mb-12  lg:font-medium max-w-[707px] mx-auto">Every four years, at the Hockey World Cup the world's greatest teams play some of the toughest, most skillful and entertaining international hockey imaginable.</p>
+               </div>
+               <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 demo-class">
+                  <div class="relative">
+                     <div>
+                        <img class="w-full" src="Images/2.png" alt="">
+                     </div>
+                     <div class="absolute top-8 lg:top-16 max-w-7xl px-4 lg:p-8">
+                        <h4 class="text-[#FFF] text-xl lg:text-3xl font-extrabold  py-4 lg:py-4">Junior Program</h4>
+                        <p class="text-[#FFF] text-base font-medium  lg:font-semibold pb-2 lg:pb-4">Junior hockey is a level of competitive hockey generally for <br> players between 16 and 21 years of age.</p>
+                        <button class="btn-primary secendary">Register Now</button>
+                     </div>
+                  </div>
+                  <div class="relative">
+                     <div>
+                        <img class="w-full" src="Images/3.png" alt="">
+                     </div>
+                     <div class="absolute top-8 lg:top-16 max-w-7xl px-4 lg:p-8">
+                        <h4 class="text-[#FFF] text-xl lg:text-3xl font-extrabold  py-4 lg:py-4">Teenager Program</h4>
+                        <p class="text-[#FFF] text-base font-medium  lg:font-semibold pb-2 lg:pb-4">Teenager hockey is a level of competitive hockey generally for <br> players between 6 and 10 years of age.</p>
+                        <button class="btn-primary secendary">Register Now</button>
+                     </div>
+                  </div>
+                  <div class="relative lg:col-span-2">
+                     <div>
+                        <img class="w-full" src="Images/4.png" alt="">
+                     </div>
+                     <div class="absolute top-4 lg:top-36 max-w-7xl px-4 lg:p-8">
+                        <h4 class="text-[#FFF] text-xl lg:text-3xl font-extrabold  py-4 lg:py-4">Professional Program</h4>
+                        <p class="text-[#FFF] text-base font-medium  lg:font-semibold pb-2 lg:pb-4">Professional Hockey is a level of competitive hockey generally for <br> players whom are able to play professionals leagues and for their nations.</p>
+                        <button class="btn-primary secendary">Register Now</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- new products -->
+         <section class="px-5">
+            <div class="mx-auto max-w-7xl">
+               <div class=" text-center">
+                  <h3 class="text-[#131318] text-2xl lg:text-4xl font-extrabold mt:5 lg:mt p-4 lg:p-6">Our New Products</h3>
+                  <p class="text-base font-normal mb-6 lg:mb-6  lg:font-medium max-w-[707px] mx-auto">we have the best quality products related to Hockey.You also can find other products related to sports. </p>
+               </div>
+            </div>
+            <div class="card-wrap grid lg:grid-cols-2 gap-5">
+               <div class="lg:flex gap-5 mx-auto max-w-7xl card-border">
+                  <div>
+                     <img class="w-full" src="Images/5.png" alt="">
+                  </div>
+                  <div class=" ">
+                     <ul class="flex gap-4 pt-6 lg:pt-0">
+                        <li class="flex"><img src="Images/Frame.png" alt="">5.0</li>
+                        <li class="flex"><img src="Images/Frame (1).png" alt="">20</li>
+                        <li class="flex"><img src="Images/Frame (2).png" alt="">200</li>
+                     </ul>
+                     <h3 class="text-[#131318] text-base lg:text-xl font-extrabold my:1 lg:my-1">World Cup Flags Football</h3>
+                     <p class="text-base font-normal leading-5">we have the best quality products .You can find every products related to games to us.</p>
+                     <div class="">
+                        <div class="flex">
+                           <div class="flex-none lg:flex gap-5 mt-1 ">
+                              <h3 class="text-[#FF4240] text-base  font-extrabold">Price - $22.00</h3>
+                              <div class="flex">
+                                 <img src="Images/Frame (3).png" alt="">
+                                 <p class="text-base font-normal">Delivery Fee:Free</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
 
-       <!--  professional hockey club -->
-       <section class="px-5 py-10">
-       <div class="mx-auto max-w-7xl">
-        <div class=" text-center">
-            <h3 class="text-[#131318] text-2xl lg:text-4xl font-extrabold p-4 lg:p-6">Professional Hockeys Club</h3>
-            <p class="text-base font-normal  lg:font-extrabold max-w-[707px] mx-auto">Professional hockey developed in the United States and Canada around the turn of the 20th century.
-                 Houghton, Michigan, was formally considered the "birthplace of professional hockey"</p>
-        </div>
-        <div class="grid grid-cols-1 lg:grid-cols-4 py-8 lg:py-12">
-            <div class="text-center py-5 lg:p-5">
-                <div class="radial-progress text-red-500" style="--value:87;" role="progressbar">87%</div>
-                <h5 class="my-4 text-xl font-semibold ">Prayer Facility</h5>
-                <p class=" text-base font-light">every profesional hockey club has prayer facility and it depends on player and the club stuff's religion</p>
-            </div>
-            <div class="text-center py-5  lg:p-5">
-                <div class="radial-progress text-green-400" style="--value:95;" role="progressbar">95%</div>
-                <h5 class="my-4 text-xl font-semibold ">Experienced Coach</h5>
-                <p class=" text-base font-light">Most of clubs have experience coach.Hockey coaches are responsible for  all aspects of their team's performance.</p>
-            </div>
-            <div class="text-center py-5  lg:p-5">
-                <div class="radial-progress text-yellow-300" style="--value:90;" role="progressbar">90%</div>
-                <h5 class="my-4 text-xl font-semibold ">Senior Player</h5>
-                <p class=" text-base font-light">senior player is the key part of game.There are no age restrictions for Senior players,</p>
-            </div>
-            <div class="text-center py-5  lg:p-5">
-                <div class="radial-progress text-cyan-400" style="--value:80;" role="progressbar">80%</div>
-                <h5 class="my-4 text-xl font-semibold ">Training Ground</h5>
-                <p class=" text-base font-light">80 percent of professional clubs have their own Training ground so that their player can practice properly.</p>
-            </div>
-        </div>
-       </div>
-       </section>
-    </main>
-    <footer>
+               <div class="lg:flex gap-5 mx-auto max-w-7xl card-border">
+                <div>
+                   <img class="w-full" src="Images/6.png" alt="">
+                </div>
+                <div class=" ">
+                   <ul class="flex gap-4 pt-6 lg:pt-0">
+                      <li class="flex"><img src="Images/Frame.png" alt="">5.0</li>
+                      <li class="flex"><img src="Images/Frame (1).png" alt="">20</li>
+                      <li class="flex"><img src="Images/Frame (2).png" alt="">200</li>
+                   </ul>
+                   <h3 class="text-[#131318] text-base lg:text-xl font-extrabold my:1 lg:my-1">World Cup Flags Football</h3>
+                   <p class="text-base font-normal leading-5">we have the best quality products .You can find every products related to games to us.</p>
+                   <div class="">
+                      <div class="flex">
+                         <div class="flex-none lg:flex gap-5 mt-1 ">
+                            <h3 class="text-[#FF4240] text-base  font-extrabold">Price - $22.00</h3>
+                            <div class="flex">
+                               <img src="Images/Frame (3).png" alt="">
+                               <p class="text-base font-normal">Delivery Fee:Free</p>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
 
-    </footer>
-</body>
+             <div class="lg:flex gap-5 mx-auto max-w-7xl card-border">
+                <div>
+                   <img class="w-full" src="Images/7.png" alt="">
+                </div>
+                <div class=" ">
+                   <ul class="flex gap-4 pt-6 lg:pt-0">
+                      <li class="flex"><img src="Images/Frame.png" alt="">5.0</li>
+                      <li class="flex"><img src="Images/Frame (1).png" alt="">20</li>
+                      <li class="flex"><img src="Images/Frame (2).png" alt="">200</li>
+                   </ul>
+                   <h3 class="text-[#131318] text-base lg:text-xl font-extrabold my:1 lg:my-1">World Cup Flags Football</h3>
+                   <p class="text-base font-normal leading-5">we have the best quality products .You can find every products related to games to us.</p>
+                   <div class="">
+                      <div class="flex">
+                         <div class="flex-none lg:flex gap-5 mt-1 ">
+                            <h3 class="text-[#FF4240] text-base  font-extrabold">Price - $22.00</h3>
+                            <div class="flex">
+                               <img src="Images/Frame (3).png" alt="">
+                               <p class="text-base font-normal">Delivery Fee:Free</p>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+
+
+             <div class="lg:flex gap-5 mx-auto max-w-7xl card-border">
+                <div>
+                   <img class="w-full" src="Images/8.png" alt="">
+                </div>
+                <div class=" ">
+                   <ul class="flex gap-4 pt-6 lg:pt-0">
+                      <li class="flex"><img src="Images/Frame.png" alt="">5.0</li>
+                      <li class="flex"><img src="Images/Frame (1).png" alt="">20</li>
+                      <li class="flex"><img src="Images/Frame (2).png" alt="">200</li>
+                   </ul>
+                   <h3 class="text-[#131318] text-base lg:text-xl font-extrabold my:1 lg:my-1">World Cup Flags Football</h3>
+                   <p class="text-base font-normal leading-5">we have the best quality products .You can find every products related to games to us.</p>
+                   <div class="">
+                      <div class="flex">
+                         <div class="flex-none lg:flex gap-5 mt-1 ">
+                            <h3 class="text-[#FF4240] text-base  font-extrabold">Price - $22.00</h3>
+                            <div class="flex">
+                               <img src="Images/Frame (3).png" alt="">
+                               <p class="text-base font-normal">Delivery Fee:Free</p>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+
+
+             <div class="lg:flex gap-5 mx-auto max-w-7xl card-border">
+                <div>
+                   <img class="w-full" src="Images/9.png" alt="">
+                </div>
+                <div class=" ">
+                   <ul class="flex gap-4 pt-6 lg:pt-0">
+                      <li class="flex"><img src="Images/Frame.png" alt="">5.0</li>
+                      <li class="flex"><img src="Images/Frame (1).png" alt="">20</li>
+                      <li class="flex"><img src="Images/Frame (2).png" alt="">200</li>
+                   </ul>
+                   <h3 class="text-[#131318] text-base lg:text-xl font-extrabold my:1 lg:my-1">World Cup Flags Football</h3>
+                   <p class="text-base font-normal leading-5">we have the best quality products .You can find every products related to games to us.</p>
+                   <div class="">
+                      <div class="flex">
+                         <div class="flex-none lg:flex gap-5 mt-1 ">
+                            <h3 class="text-[#FF4240] text-base  font-extrabold">Price - $22.00</h3>
+                            <div class="flex">
+                               <img src="Images/Frame (3).png" alt="">
+                               <p class="text-base font-normal">Delivery Fee:Free</p>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+
+
+             <div class="lg:flex gap-5 mx-auto max-w-7xl card-border">
+                <div>
+                   <img class="w-full" src="Images/10.png" alt="">
+                </div>
+                <div class=" ">
+                   <ul class="flex gap-4 pt-6 lg:pt-0">
+                      <li class="flex"><img src="Images/Frame.png" alt="">5.0</li>
+                      <li class="flex"><img src="Images/Frame (1).png" alt="">20</li>
+                      <li class="flex"><img src="Images/Frame (2).png" alt="">200</li>
+                   </ul>
+                   <h3 class="text-[#131318] text-base lg:text-xl font-extrabold my:1 lg:my-1">World Cup Flags Football</h3>
+                   <p class="text-base font-normal leading-5">we have the best quality products .You can find every products related to games to us.</p>
+                   <div class="">
+                      <div class="flex">
+                         <div class="flex-none lg:flex gap-5 mt-1 ">
+                            <h3 class="text-[#FF4240] text-base  font-extrabold">Price - $22.00</h3>
+                            <div class="flex">
+                               <img src="Images/Frame (3).png" alt="">
+                               <p class="text-base font-normal">Delivery Fee:Free</p>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             
+            </div>
+         </section>
+      </main>
+      <footer>
+      </footer>
+   </body>
 </html>
