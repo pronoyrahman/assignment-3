@@ -32,7 +32,7 @@
          border-radius: 20px;
          }
         
-        
+         
          @media screen and (max-width:1024px) {
          .demo-class img {
          height: 244px;
@@ -42,8 +42,6 @@
          .secendary{
          padding: 8px;
          }
-        
-         
          }
       </style>
    </head>
@@ -367,9 +365,9 @@
                   <p class="text-base font-normal mb-6 lg:mb-6  lg:font-medium  mx-auto">Here are some common question asked by our clients and check the answeer below. </p>
                </div>
     
-                   <div class="max-w-7xl flex-none lg:flex justify-between ">
-                        <div class="">
-                           <img src="Images/11.png" alt="">
+                   <div class=" flex-none lg:flex justify-evenly ">
+                        <div class="w-[100%]">
+                           <img class="w-full lg:w-96" src="Images/11.png" alt="">
                         </div>
                         <div class="mt-6 lg:mt-0">
                            <div class="collapse collapse-plus bg-base-200 ">
@@ -392,7 +390,7 @@
                               </div>
                             </div>
                             
-                            <div class="collapse collapse-plus bg-base-200 p-2 ">
+                            <div class="collapse collapse-plus bg-base-200 p-0 ">
                               <input type="radio" name="my-accordion-3" /> 
                               <div class="collapse-title text-xl font-medium">
                                 Private Lessons
@@ -402,7 +400,7 @@
                               </div>
                             </div> 
 
-                            <div class="collapse collapse-plus bg-base-200 p-2 ">
+                            <div class="collapse collapse-plus bg-base-200 p-0 ">
                               <input type="radio" name="my-accordion-3" /> 
                               <div class="collapse-title text-xl font-medium">
                                 Ski Touring
@@ -412,7 +410,7 @@
                               </div>
                             </div>
 
-                            <div class="collapse collapse-plus bg-base-200 p-2 ">
+                            <div class="collapse collapse-plus bg-base-200 p-0 ">
                               <input type="radio" name="my-accordion-3" /> 
                               <div class="collapse-title text-xl font-medium">
                                 Booking
@@ -422,7 +420,7 @@
                               </div>
                             </div>
 
-                            <div class="collapse collapse-plus bg-base-200 p-2 ">
+                            <div class="collapse collapse-plus bg-base-200 p-0 ">
                               <input type="radio" name="my-accordion-3" /> 
                               <div class="collapse-title text-xl font-medium">
                                 Pricings
@@ -438,8 +436,145 @@
                   </div>
             </div>
          </section>
+              <!--get in touch  -->
+         <section class="px-5 py-5 lg:py-10">
+            <div class="mx-auto max-w-7xl">
+               <div class="text-center">
+                  <h3 class="text-[#131318] text-2xl lg:text-4xl font-extrabold p-4 lg:p-6">Get in Touch</h3>
+                  <p class="text-base font-normal mb-6 lg:mb-6  lg:font-medium  mx-auto">It is our one of the popular section.stay connected with us </p>
+               </div>
+            
+               
+            <div class="flex-none lg:flex gap-10 justify-between">
+
+
+                 <div class="lg:w-1/2">
+                      <div class="bg-green-50 p-2 lg:p-4 mt-4">
+                        <img src="Images/Group 1171275317.png" alt="">
+                        <p class="pt-2 lg:pt-4">Phone Number</p>
+                        <h5 class="pt-2 lg:pt-4 font-semibold">(+62)123-321-543</h5>
+                      </div>
+                      <div class="bg-yellow-50 p-2 lg:p-4 mt-4">
+                        <img src="Images/Group 1171275318.png" alt="">
+                        <p class="pt-2 lg:pt-4">Email</p>
+                        <h5 class="pt-2 lg:pt-4 font-semibold">hockeys@support.com</h5>
+                      </div>
+                      <div class="bg-gray-50 p-2 lg:p-4 mt-4">
+                        <img src="Images/Group 1171275321.png" alt="">
+                        <p class="pt-2 lg:pt-4">Location</p>
+                        <h5 class="pt-2 lg:pt-4 font-semibold">152/1 Mohakhali wireless gate</h5>
+                      </div>
+                 </div>
+
+              
+                  <div class="mt-8 lg:mt0">
+                     <div class=" lg:grid lg:grid-cols-2 gap-10 w-[100%] ">
+                      
+                        <label class="form-control w-full max-w-xs ">
+                           <div class="label ">
+                             <span class="label-text text-xl font-semibold"> your name</span>
+                           </div>
+                           <input  type="text" placeholder="Enter your Full Name" class="input input-bordered w-full max-w-xs" />  
+                         </label> 
+                      
+
+                        <label class="form-control w-full max-w-xs">
+                           <div class="label">
+                             <span class="label-text text-xl font-semibold"> your Email</span>
+                           </div>
+                           <input type="text" placeholder="Enter your email" class="input input-bordered w-full max-w-full" />  
+                         </label> 
+
+                        <label class="form-control w-full max-w-xs">
+                           <div class="label">
+                             <span class="label-text text-xl font-semibold"> Subject</span>
+                           </div>
+                           <input type="text" placeholder="Enter your subject" class="input input-bordered w-full max-w-xs" />  
+                         </label> 
+
+                        <label class="form-control w-full max-w-xs">
+                           <div class="label">
+                             <span class="label-text text-xl font-semibold">Phone number</span>
+                           </div>
+                           <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs" />  
+                         </label> 
+                     </div>
+                     <div>
+                        <label class="form-control">
+                           <div class="label">
+                             <span class="label-text">Message</span>
+                           </div>
+                           <textarea class="textarea textarea-bordered h-48" placeholder="write your meaage"></textarea>
+                         </label>
+                        <button class="btn-primary w-[100%] lg:px-48 mt-4 ">Send Message</button>
+                     </div>
+                  </div>
+            </div>
+         </div>
+         </section>
+         <section class="px-5 py-5 lg:py-10">
+            <div class="mx-auto max-w-7xl bg-yellow-50 rounded-xl">
+               <div class="text-center">
+                  <h3 class="text-[#131318] text-2xl lg:text-4xl font-extrabold p-4 lg:p-6">Social Media</h3>
+               </div>
+                 <div class="mx-auto max-w-7xl">
+                  <img class="px-[40%] py-10 lg:pl-[545px]" src="Images/Social.png" alt="">
+                 </div>
+                
+               
+            </div>
+         </section>
+        
       </main>
-      <footer>
+      <footer class="px-5">
+      <div class="bg-[#131318] rounded-2xl ">
+            <div class="flex-none lg:flex gap-56 px-4 lg:px-24 py-4 lg:py-24">
+               <div>
+                  <h3 class="text-2xl font-extrabold text-[#fff]">Get In Touch</h3>
+                  <p class="text-base font-normal mt-8 text-[#fff] ">maintain contact with us.our contact information is in below.</p>
+                     <div class="flex font-semibold gap-4 my-4 text-[#fff] ">
+                        <img src="Images/Frame (4).png" alt="">
+                        <p>hockeys@suppot.com</p>
+                     </div>
+                     <div class="flex font-bold gap-4 text-[#fff]">
+                        <img src="Images/Frame (5).png" alt="">
+                        <p>(+62)123-321-543</p>
+                     </div>
+               </div>
+               <div>
+                  <div class="grid grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-40 text-[#fff] mt-12 lg:mt-0">
+                     <div class="text-xl">
+                        <header class="text-2xl">Company</header> <br>
+                        <a href="">About Us</a> <br>
+                        <a href="">Leadership</a><br>
+                        <a href="">Career</a><br>
+                        <a href="">news & articles</a><br>
+                        <a href="">Legal Notice</a><br>
+
+                     </div>
+                     <div class="text-xl">
+                        <header class="text-2xl">support</header> <br>
+                        <a href="">Help center</a> <br>
+                        <a href="">FAQ</a><br>
+                        <a href="">Ticket support</a><br>
+                       
+                        <a href="">Contact us</a><br>
+
+                     </div>
+                     <div class="text-xl">
+                        <header class="text-2xl">Services</header> <br>
+                        <a href="">Academy</a> <br>
+                        <a href="">Group Lession</a><br>
+                        <a href="">Private lession</a><br>
+                        <a href="">Hockeys For Kids</a><br>
+                        <a href="">hockeys For Adalts</a><br>
+
+                     </div>
+                      
+                  </div>
+               </div>
+            </div>
+      </div>
       </footer>
    </body>
 </html>
